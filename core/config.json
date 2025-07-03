@@ -1,0 +1,16 @@
+{
+  "routes": {},
+  "applications": {},
+  "models": {},
+  "keys": {
+    "dial_api_key": {
+      "project": "TEST-PROJECT",
+      "role": "default"
+    }
+  },
+  "roles": {
+    "default": {
+      "limits": {}
+    }
+  }
+}

@@ -1,0 +1,2 @@
+aidial-sdk==0.22.1
+aidial-client==0.2.0rc0

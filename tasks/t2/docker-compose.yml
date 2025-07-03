@@ -1,0 +1,7 @@
+include:
+  - path: ../../docker-compose.yml
+    env_file: ./.env
+
+services:
+  echo:
+    build: echo
