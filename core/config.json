@@ -1,7 +1,54 @@
 {
   "routes": {},
-  "applications": {},
-  "models": {},
+  "applications": {
+    "echo": {
+      "displayName": "My Echo App",
+      "description": "Simple application that repeats user's message",
+      "endpoint": "http://host.docker.internal:5022/openai/deployments/echo/chat/completions"
+    },
+    "essay-assistant": {
+      "displayName": "Essay Assistant",
+      "description": "Essay Assistant. Always answers with essay.",
+      "endpoint": "http://host.docker.internal:5025/openai/deployments/essay-assistant/chat/completions"
+    }
+  },
+  "models": {
+    "gpt-4o": {
+      "displayName": "GPT 4o",
+      "endpoint": "http://adapter-dial:5000/openai/deployments/gpt-4o/chat/completions",
+      "iconUrl": "http://localhost:3001/gpt4.svg",
+      "type": "chat",
+      "upstreams": [
+        {
+          "endpoint": "https://ai-proxy.lab.epam.com/openai/deployments/gpt-4o/chat/completions",
+          "key": "{REPLACE_WITH_YOUR_API_KEY}"
+        }
+      ]
+    },
+    "us.anthropic.claude-3-7-sonnet-20250219-v1": {
+      "displayName": "sonnet 3.7",
+      "endpoint": "http://adapter-dial:5000/openai/deployments/us.anthropic.claude-3-7-sonnet-20250219-v1/chat/completions",
+      "type": "chat",
+      "upstreams": [
+        {
+          "endpoint": "https://dev-dial-core.staging.deltixhub.io/openai/deployments/us.anthropic.claude-3-7-sonnet-20250219-v1/chat/completions",
+          "key": "{REPLACE_WITH_YOUR_API_KEY}"
+        }
+      ]
+    },
+    "gemini-2.5-pro-preview-03-25": {
+      "displayName": "Gemini 2.5 Pro",
+      "endpoint": "http://adapter-dial:5000/openai/deployments/gemini-2.5-pro-preview-03-25/chat/completions",
+      "iconUrl": "http://localhost:3001/Gemini-Pro-Vision.svg",
+      "type": "chat",
+      "upstreams": [
+        {
+          "endpoint": "https://dev-dial-core.staging.deltixhub.io/openai/deployments/gemini-2.5-pro-preview-03-25/chat/completions",
+          "key": "{REPLACE_WITH_YOUR_API_KEY}"
+        }
+      ]
+    }
+  },
   "keys": {
     "dial_api_key": {
       "project": "TEST-PROJECT",
