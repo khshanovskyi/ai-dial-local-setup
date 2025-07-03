@@ -34,7 +34,7 @@ There will be absent echo application, we need to add it to configurations👇
         ```
 11. Restart the compose:
     ```bash
-    docker compose down && docker compose up -d --build
+    docker compose stop && docker compose up -d --build
     ```
 12. Open in browser [local dial chat](http://localhost:3000/marketplace) and check that My Echo App has been added to marketplace
 <img src="_screenshots/marketplace-echo.png">
