@@ -4,35 +4,35 @@
 
 ```
 ├── core/
-│   └── config.json               # 🚧 TODO: Follow instructions in tasks. DIAL Core configuration with routes, applications, models, and keys
+│   └── config.json               🚧 TODO: Follow instructions in tasks. DIAL Core configuration with routes, applications, models, and keys
 ├── settings/
-│   └── settings.json             # ✅ Complete - Core server settings and identity providers
+│   └── settings.json             ✅ Complete - Core server settings and identity providers
 ├── tasks/                        
 │   ├── t1/
-│   │   └── start.md              # 🚧 TODO: Follow instructions 
+│   │   └── start.md              🚧 TODO: Follow instructions 
 │   ├── t2/
-│   │   ├── .env                  # ✅ Complete - Environment configuration
+│   │   ├── .env                  ✅ Complete - Environment configuration
 │   │   ├── core/
-│   │   │   └── config.json       # 🚧 TODO: Follow instructions
-│   │   ├── docker-compose.yml    # ✅ Complete - Extended compose with echo service
+│   │   │   └── config.json       🚧 TODO: Follow instructions
+│   │   ├── docker-compose.yml    ✅ Complete - Extended compose with echo service
 │   │   ├── echo/
-│   │   │   ├── Dockerfile        # ✅ Complete - Echo app containerization
-│   │   │   ├── app.py            # ✅ Complete - Simple echo application
-│   │   │   └── requirements.txt  # ✅ Complete - Python dependencies
-│   │   └── task_2.md             # 🚧 TODO: Follow instructions
+│   │   │   ├── Dockerfile        ✅ Complete - Echo app containerization
+│   │   │   ├── app.py            ✅ Complete - Simple echo application
+│   │   │   └── requirements.txt  ✅ Complete - Python dependencies
+│   │   └── task_2.md             🚧 TODO: Follow instructions
 │   ├── t3/
 │   │   ├── echo/
-│   │   │   ├── app.py            # ✅ Complete - Modified echo for local development
-│   │   │   └── requirements.txt  # ✅ Complete - Updated dependencies
-│   │   └── task_3.md             # 🚧 TODO: Follow instructions 
+│   │   │   ├── app.py            ✅ Complete - Modified echo for local development
+│   │   │   └── requirements.txt  ✅ Complete - Updated dependencies
+│   │   └── task_3.md             🚧 TODO: Follow instructions 
 │   ├── t4/
-│   │   └── task_4.md             # 🚧 TODO: Follow instructions 
+│   │   └── task_4.md             🚧 TODO: Follow instructions 
 │   └── t5/
 │       ├── essay_assistant/
-│       │   ├── app.py            # 🚧 TODO: Complete implementation with AsyncDial client
-│       │   └── requirements.txt  # ✅ Complete - Dependencies for essay assistant
-│       └── task_5.md             # 🚧 TODO: Follow instructions 
-└── docker-compose.yml            # 🚧 TODO: - Main compose file (Add NASA_API_KEY)
+│       │   ├── app.py            🚧 TODO: Complete implementation with AsyncDial client
+│       │   └── requirements.txt  ✅ Complete - Dependencies for essay assistant
+│       └── task_5.md             🚧 TODO: Follow instructions 
+└── docker-compose.yml            🚧 TODO: - Main compose file (Add NASA_API_KEY)
 ```
 
 ## Services Architecture
