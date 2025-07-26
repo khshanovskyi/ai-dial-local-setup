@@ -62,25 +62,25 @@
 7. Add two more models:
    - Into `models`:
     ```
-    "us.anthropic.claude-3-7-sonnet-20250219-v1": {
+    "claude-3-7-sonnet@20250219": {
           "displayName": "sonnet 3.7",
-          "endpoint": "http://adapter-dial:5000/openai/deployments/us.anthropic.claude-3-7-sonnet-20250219-v1/chat/completions",
+          "endpoint": "http://adapter-dial:5000/openai/deployments/claude-3-7-sonnet@20250219/chat/completions",
           "type": "chat",
           "upstreams": [
             {
-              "endpoint": "https://dev-dial-core.staging.deltixhub.io/openai/deployments/us.anthropic.claude-3-7-sonnet-20250219-v1/chat/completions",
+              "endpoint": "https://ai-proxy.lab.epam.com/openai/deployments/claude-3-7-sonnet@20250219/chat/completions",
               "key": "{REPLACE_WITH_YOUR_API_KEY}"
             }
           ]
         },
-    "gemini-2.5-pro-preview-03-25": {
+    "gemini-2.5-pro": {
           "displayName": "Gemini 2.5 Pro",
-          "endpoint": "http://adapter-dial:5000/openai/deployments/gemini-2.5-pro-preview-03-25/chat/completions",
+          "endpoint": "http://adapter-dial:5000/openai/deployments/gemini-2.5-pro/chat/completions",
           "iconUrl": "http://localhost:3001/Gemini-Pro-Vision.svg",
           "type": "chat",
           "upstreams": [
             {
-              "endpoint": "https://dev-dial-core.staging.deltixhub.io/openai/deployments/gemini-2.5-pro-preview-03-25/chat/completions",
+              "endpoint": "https://ai-proxy.lab.epam.com/openai/deployments/gemini-2.5-pro/chat/completions",
               "key": "{REPLACE_WITH_YOUR_API_KEY}"
             }
           ]
