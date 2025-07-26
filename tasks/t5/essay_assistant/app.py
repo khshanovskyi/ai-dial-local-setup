@@ -34,7 +34,7 @@ class EssayAssistantApplication(ChatCompletion):
 
         with response.create_single_choice() as choice:
             chunks = await client.chat.completions.create(
-                deployment_name="us.anthropic.claude-3-7-sonnet-20250219-v1",
+                deployment_name="claude-3-7-sonnet@20250219",
                 stream=True,
                 messages=[
                     {
