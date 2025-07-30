@@ -1,11 +1,7 @@
 {
   "routes": {},
   "applications": {
-    "echo": {
-      "displayName": "My Echo App",
-      "description": "Simple application that repeats user's message",
-      "endpoint": "http://echo:5000/openai/deployments/echo/chat/completions"
-    }
+
   },
   "models": {},
   "keys": {
