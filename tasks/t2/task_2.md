@@ -23,7 +23,7 @@
 There will be absent echo application, we need to add it to configurations👇
 <img src="_screenshots/marketplace.png">
 <img src="_screenshots/chat.png">
-10. Open the [config](core/config.json) and add:
+9. Open the [config](core/config.json) and add:
     - Into `applications`:
         ```
         "echo": {
@@ -32,13 +32,13 @@ There will be absent echo application, we need to add it to configurations👇
               "endpoint": "http://echo:5000/openai/deployments/echo/chat/completions"
             }
         ```
-11. Restart the compose:
+10. Restart the compose:
     ```bash
     docker compose stop && docker compose up -d --build
     ```
-12. Open in browser [local dial chat](http://localhost:3000/marketplace) and check that My Echo App has been added to marketplace
+11. Open in browser [local dial chat](http://localhost:3000/marketplace) and check that My Echo App has been added to marketplace
 <img src="_screenshots/marketplace-echo.png">
-13. Use echo application and type:
+12. Use echo application and type:
     ```text
     Hooray, eventually the Echo app running in Docker container is up
     ```

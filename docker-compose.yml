@@ -1,6 +1,7 @@
 services:
   themes:
     image: epam/ai-dial-chat-themes:development
+#    platform: linux/amd64
     ports:
       - "3001:8080"
 
@@ -8,6 +9,7 @@ services:
     ports:
       - "3000:3000"
     image: epam/ai-dial-chat:development
+#    platform: linux/amd64
     depends_on:
       - themes
       - core
@@ -21,6 +23,7 @@ services:
 
   redis:
     image: redis:7.2.4-alpine3.19
+#    platform: linux/amd64
     restart: always
     ports:
       - "6379:6379"
@@ -38,6 +41,7 @@ services:
     ports:
       - "8080:8080"
     image: epam/ai-dial-core:development
+#    platform: linux/amd64
     environment:
       'AIDIAL_SETTINGS': '/opt/settings/settings.json'
       'JAVA_OPTS': '-Dgflog.config=/opt/settings/gflog.xml'

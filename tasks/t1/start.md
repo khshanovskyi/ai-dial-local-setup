@@ -1,14 +1,15 @@
 # Start DIAL Chat with Themes and Core
 
 1. Open the `docker-compose.yml` in the project root
-2. Run it with
-```bash
-docker compose up -d
-```
+2. Run it with:
+    ```bash
+    docker compose up -d
+    ```
 3. Check that they are up 
-```bash
-docker compose ps -a
-```
+    ```bash
+    docker compose ps -a
+    ```
+    **For MAC users please uncomment in config for each service the `platform: linux/amd64`**
 4. Open in browser [local dial chat](http://localhost:3000/marketplace) and check that it works. There will be no models
 and applications, it is okay, we will create them with next task.
 <img src="_screenshots/marketplace.png">
