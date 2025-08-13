@@ -38,7 +38,7 @@
 6. Open in browser [local dial chat](http://localhost:3000/marketplace) and test Echo app
    <img src="_screenshots/test.png">
    <img src="_screenshots/log.png">
-7. Open the [echo app](echo/app.py) and replace **18 row** `choice.append_content(last_user_message.content or "")`with:
+7. Open the [echo app](echo/app.py) and replace `choice.append_content(last_user_message.content or "")`with:
     ```python
     choice.append_content(f"abracadabra\n{last_user_message.content}" or "Oops...")
     ```

@@ -45,7 +45,7 @@
         environment:
           DIAL_URL: "http://core:8080"
           LOG_LEVEL: "INFO"
-    ```adapter_add
+    ```
 <img src="_screenshots/adapter_add.png">
 
 4. Run docker-compose (root docker compose)
